@@ -3,61 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Muzeum Libusza</title>
-
+    <!-- Czcionka Playfair Display dla eleganckich nagłówków -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleindex.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Muzeum Libusza</h1>
+    <header class="navbar">
+        <h1 class="logo">
+            <a href="#index">Muzeum <span class="orange">Libusza</span></a>
+        </h1>
 
         <nav>
-            <a href="geologia.html">Geologia</a>
-            <a href="muzeum.html">Muzeum</a>
-            <a href="spacer360.html">Spacer 360</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="aktualnosci.html">Aktualności</a>
+            <a href="#aktualnosci">AKTUALNOŚCI</a>
+            <a href="#muzeum">O MUZEUM</a>
+            <a href="#eksponaty">EKSPONATY</a>
+            <a href="#geologia">GEOLOGIA</a>
+            <a href="#historia">HISTORIA</a>
+            <a href="#spacer360">SPACER 360°</a>
+            <a href="#kontakt">KONTAKT</a>
         </nav>
     </header>
 
-    <main>
+        <!-- sekcja muzeum libusza-->
+    <main class="hero-section" id="index">
+        <div class="hero-container">
+            <!-- lewa strona z trescią glownej sekcji -->
+            <div class="hero-content">
+                <span class="sub-tag">LIBUSZA • PODKARPACIE</span>
+                
+                <h2 class="hero-title">
+                    Muzeum Przemysłu<br>
+                    Naftowego<br>
+                    i <span class="orange">Etnografii</span> w Libuszy
+                </h2>
 
-        <section class="powitanie">
-            <h2>Witamy w Muzeum Libusza</h2>
+                <p class="hero-description">
+                    Zapraszamy do zwiedzania! Ponad 600 eksponatów i 500 biogramów zasłużonych nafciarzy — 
+                    zobacz XIX-wieczną destylarnię nafty, autentyczne narzędzia wiertnicze i historię rodziny Skrzyńskich.
+                </p>
 
-            <p>
-                Poznaj historię muzeum, geologię regionu oraz dostępne wystawy.
-            </p>
+                <div class="hero-buttons">
+                    <a href="muzeum.html" class="btn btn-primary">ZAPLANUJ WIZYTĘ &rarr;</a>
+                    <a href="spacer360.html" class="btn btn-secondary">ZWIEDŹ ONLINE</a>
+                </div>
 
-            <a href="muzeum.html" class="przycisk">
-                Zobacz wystawy
-            </a>
-        </section>
+                <div class="hero-status">
+                    <span class="dot"></span> Sprawdź aktualne godziny otwarcia
+                </div>
+            </div>
 
-        <section class="aktualnosci">
-            <h2>Najnowsze aktualności</h2>
+            <!-- prawa strona ze wspolrzednymi -->
+            <div class="hero-meta">
+                <p>49°42' N, 21°14' E</p>
+                <p>gm. Biecz, pow. gorlicki</p>
+                <p>Muzeum od 1977 r.</p>
+            </div>
+        </div>
+    </main>
 
-            <article>
-                <h3>Nowa wystawa</h3>
+    <!-- sekcja aktualnosci-->
+    <section id="aktualnosci" class="news-section">
+    <div class="news-container">
+        <!-- Nagłówek sekcji -->
+        <span class="news-tag">WARSTWA BIEŻĄCA</span>
+        <h2 class="news-title">Aktualności</h2>
 
-                <p>
-                    Zapraszamy do zapoznania się z najnowszą wystawą
-                    w Muzeum Libusza.
+        <!-- Siatka 3 kart z aktualnościami -->
+        <div class="news-grid">
+            
+            <!-- Karta 1 -->
+            <article class="news-card">
+                <span class="card-date">2026</span>
+                <h3 class="card-title">Rusza wirtualny spacer po muzeum</h3>
+                <p class="card-text">
+                    Projekt „Wirtualny spacer po Muzeum Przemysłu Naftowego i Etnografii w Libuszy” 
+                    realizowany przez Koło Naukowe KIWON AGH, dofinansowany z programu TURBOGrant 
+                    Fundacji ORLEN im. Ignacego Łukasiewicza.
                 </p>
             </article>
 
-            <a href="aktualnosci.html">
-                Zobacz wszystkie aktualności
-            </a>
-        </section>
+            <!-- Karta 2 -->
+            <article class="news-card">
+                <span class="card-date">wkrótce</span>
+                <h3 class="card-title">Nowe tabliczki przy eksponatach</h3>
+                <p class="card-text">
+                    Kopanka, wiertnica przewoźna, kiwon i narzędzia wiertnicze zyskują opisy 
+                    z kodem QR prowadzącym do dodatkowych materiałów.
+                </p>
+            </article>
 
-    </main>
+            <!-- Karta 3 -->
+            <article class="news-card">
+                <span class="card-date">wkrótce</span>
+                <h3 class="card-title">Digitalizacja zbiorów</h3>
+                <p class="card-text">
+                    Ponad 600 eksponatów i 500 biogramów nafciarzy trafi do internetowego katalogu muzeum.
+                </p>
+            </article>
 
-    <footer>
-        <p>&copy; 2026 Muzeum Libusza</p>
+        </div>
+    </div>
+    </section>
+
+        <!-- sekcja o muzeum-->
+    <section id="muzeum" class="about-section">
+    <div class="about-container">
+        
+        <!-- Lewa kolumna: Główny opis i lista cech -->
+        <div class="about-col main-about">
+            <span class="about-tag">KIM JESTEŚMY</span>
+            <h2 class="about-title">O muzeum</h2>
+            
+            <p class="about-lead">
+                Muzeum założyli w 1977 roku Anna i Tadeusz Pabisowie, byli pracownicy przemysłu naftowego. 
+                Od 2000 roku instytucja działa jako Fundacja Upowszechniania Historii Przemysłu Naftowego, 
+                gromadząc i udostępniając świadectwa dziejów kopalnictwa naftowego regionu gorlickiego.
+            </p>
+
+            <!-- Tabela / lista szczegółów -->
+            <div class="about-features">
+                
+                <div class="feature-row">
+                    <span class="feature-label">ZBIORY</span>
+                    <p class="feature-desc">
+                        Ponad 600 eksponatów oraz ponad 500 biogramów zasłużonych nafciarzy, 
+                        w tym ok. 50 życiorysów pierwszych kopaczy szybów z lat 1852–1890
+                    </p>
+                </div>
+
+                <div class="feature-row">
+                    <span class="feature-label">UNIKATY</span>
+                    <p class="feature-desc">
+                        Destylarnia nafty z 1856 r. — najstarsza na świecie poza apteczną — 
+                        oraz kuźnia kopalniana z połowy XIX wieku
+                    </p>
+                </div>
+
+                <div class="feature-row">
+                    <span class="feature-label">DZIAŁALNOŚĆ</span>
+                    <p class="feature-desc">
+                        Założyciele opublikowali 25 książek i ponad 250 artykułów, 
+                        prowadząc spotkania z młodzieżą, nafciarzami i turystami
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Prawa kolumna: Dział Etnograficzny -->
+        <div class="about-col etno-about">
+            <span class="about-tag">DZIAŁ ETNOGRAFICZNY</span>
+            <h3 class="etno-title">Codzienne życie regionu</h3>
+            <p class="etno-desc">
+                Obok eksponatów naftowych muzeum gromadzi meble i przedmioty codziennego użytku z XIX i XX w., 
+                narzędzia rzemieślnicze, sprzęty gospodarskie oraz elementy stroju ludowego mieszkańców regionu gorlickiego.
+            </p>
+        </div>
+
+    </div>
+    </section>
+    
+        <!-- sekcja eksponaty-->
+    <section id="eksponaty" class="exhibits-section">
+    <div class="exhibits-container">
+        <!-- Nagłówek sekcji -->
+        <span class="exhibits-tag">Z TABLICZEK NA SALI</span>
+        <h2 class="exhibits-title">Eksponaty</h2>
+        <p class="exhibits-subtitle">
+            Cztery przystanki na trasie zwiedzania — od najprostszego sposobu wydobycia 
+            po mechanizację pola naftowego. Każda tabliczka w muzeum ma kod QR z dodatkowymi materiałami.
+        </p>
+
+        <!-- Siatka kart -->
+        <div class="exhibits-grid">
+            
+            <!-- Karta 1 -->
+            <article class="exhibit-card">
+                <div class="card-content">
+                    <h3 class="exhibit-name">Kopanka</h3>
+                    <span class="exhibit-sub">Najstarszy sposób wydobywania ropy naftowej</span>
+                    <p class="exhibit-text">
+                        Ręcznie kopany szyb o niewielkiej głębokości, którego ściany zabezpieczano drewnianą obudową. Ropę wydobywano wiadrami lub przy użyciu prostych pomp — metoda stosowana do czasu upowszechnienia nowoczesnych technik wiertniczych.
+                    </p>
+                </div>
+                <div class="card-footer-action">
+                    ZESKANUJ I DOWIEDZ SIĘ WIĘCEJ
+                </div>
+            </article>
+
+            <!-- Karta 2 -->
+            <article class="exhibit-card">
+                <div class="card-content">
+                    <h3 class="exhibit-name">Wiertnica przewoźna</h3>
+                    <span class="exhibit-sub">Mobilne urządzenie do wykonywania odwiertów</span>
+                    <p class="exhibit-text">
+                        Nowoczesne jak na swoje czasy urządzenie, które umożliwiało wykonywanie odwiertów naftowych w różnych miejscach. Mobilna konstrukcja usprawniła prace poszukiwawcze i wydobywcze w XX wieku.
+                    </p>
+                </div>
+                <div class="card-footer-action">
+                    ZESKANUJ I DOWIEDZ SIĘ WIĘCEJ
+                </div>
+            </article>
+
+            <!-- Karta 3 -->
+            <article class="exhibit-card">
+                <div class="card-content">
+                    <h3 class="exhibit-name">Kiwon</h3>
+                    <span class="exhibit-sub">Mechaniczne urządzenie do wydobywania ropy</span>
+                    <p class="exhibit-text">
+                        Charakterystyczne wahadłowe ramię kiwonu od ponad wieku kojarzone jest z wydobyciem ropy naftowej — umożliwiało eksploatację odwiertu, gdy ropa przestawała samoczynnie wypływać na powierzchnię.
+                    </p>
+                </div>
+                <div class="card-footer-action">
+                    ZESKANUJ I DOWIEDZ SIĘ WIĘCEJ
+                </div>
+            </article>
+
+            <!-- Karta 4 -->
+            <article class="exhibit-card">
+                <div class="card-content">
+                    <h3 class="exhibit-name">Narzędzia wiertnicze</h3>
+                    <span class="exhibit-sub">Wyposażenie wykorzystywane podczas wiercenia</span>
+                    <p class="exhibit-text">
+                        Każde z narzędzi pełniło określoną funkcję — od rozkruszania skał, przez pogłębianie otworu, aż po przygotowanie go do dalszej eksploatacji.
+                    </p>
+                </div>
+                <div class="card-footer-action">
+                    ZESKANUJ I DOWIEDZ SIĘ WIĘCEJ
+                </div>
+            </article>
+
+        </div>
+    </div>
+    </section>
+
+        <!-- sekcja kontakt-->
+    <footer id="kontakt">
+    <div class="footer-container">
+        <!-- kolumna 1: Odwiedź nas -->
+        <div class="footer-col">
+            <span class="footer-tag">ODWIEDŹ NAS</span>
+            <h3 class="footer-title">Kontakt</h3>
+            <p>Muzeum Przemysłu Naftowego i Etnografii</p>
+            <p>Libusza, gm. Biecz, woj. podkarpackie</p>
+            <p>tel. XX XXX XX XX</p>
+            <p><a href="mailto:kontakt@muzeum-libusza.pl" class="footer-link">kontakt@muzeum-libusza.pl</a></p>
+        </div>
+
+        <!-- kolumna 2: Godziny otwarcia -->
+        <div class="footer-col">
+            <span class="footer-tag">GODZINY OTWARCIA</span>
+            <h3 class="footer-title">do uzupełnienia</h3>
+            <p class="footer-subtext">prosimy o dosłanie aktualnych godzin</p>
+        </div>
+
+        <!-- kolumna 3: Projekt -->
+        <div class="footer-col">
+            <span class="footer-tag">PROJEKT</span>
+            <p class="project-text">
+                Strona przygotowana w ramach projektu „Wirtualny spacer po Muzeum Przemysłu Naftowego i Etnografii w Libuszy”, Koło Naukowe KIWON AGH, dofinansowanego z programu TURBOGrant Fundacji ORLEN im. Ignacego Łukasiewicza.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>&copy; 2026 Muzeum w Libuszy</span>
+    </div>
     </footer>
 
 </body>
