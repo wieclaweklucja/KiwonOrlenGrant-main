@@ -66,6 +66,7 @@ nav a {
     text-decoration: none;
     border-bottom: 1px solid transparent;
     display: inline-block;
+    transition: all 0.2s ease;
 }
 
 nav a:hover {
@@ -182,6 +183,20 @@ nav a:hover {
     background-color: #7ab356;
     border-radius: 50%;
     display: inline-block;
+}
+
+.godziny {
+    color: white;
+    font-family: 'Times New Roman', serif;
+}
+
+.godziny a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+.godziny a:hover {
+    color: #c7762b;
 }
 
 /* prawe współrzędne */
@@ -625,5 +640,315 @@ footer {
     .exhibits-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+}
+
+/* SEKCJA GEOLOGIA */
+.geology-section {
+    background-color: #1c1816; /* Ciemne tło spójne z resztą ciemnych sekcji */
+    color: #e6dfd5;
+    padding: 100px 80px;
+    scroll-margin-top: 60px;
+}
+
+.geology-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.geology-tag {
+    color: #b07044;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.geology-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #f3ece4;
+    margin: 0 0 25px 0;
+}
+
+.geology-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #bfae9e;
+    max-width: 620px;
+    margin: 0 0 60px 0;
+}
+
+/* LISTA BLOKÓW Z MAPAMI */
+.geology-maps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* POJEDYNCZY KAFELEK Z MAPĄ */
+.map-item {
+    position: relative;
+    background-color: #eae3d5; /* Jasny beż z makiety */
+    border-radius: 2px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* BRĄZOWE KÓŁKO Z NUMERKIEM */
+.map-badge {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 36px;
+    height: 36px;
+    background-color: #b07044;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 10;
+}
+
+/* KONTENER ORAZ EMBED NA PDF */
+.map-content {
+    width: 100%;
+    height: 550px; /* Wysokość okna z podglądem mapy */
+    overflow: hidden;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 900px) {
+    .geology-section {
+        padding: 60px 20px;
+    }
+
+    .map-content {
+        height: 350px;
+    }
+
+    .map-badge {
+        top: 15px;
+        left: 15px;
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+}
+
+/* SEKCJA HISTORIA */
+.history-section {
+    background-color: #f4efe6; /* Jasny beż */
+    color: #1c1816;
+    padding: 100px 80px;
+    scroll-margin-top: 60px;
+}
+
+.history-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.history-tag {
+    color: #b07044;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.history-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #1c1816;
+    margin: 0 0 20px 0;
+}
+
+.history-subtitle {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #595048;
+    max-width: 580px;
+    margin: 0 0 70px 0;
+}
+
+/* KONTENER LINII CZASU */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Pionowa szara linia boczna */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 4px;
+    width: 1px;
+    background-color: #d8cebe;
+}
+
+/* POJEDYNCZY PUNKT NA LINII CZASU */
+.timeline-item {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 55px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Kwadracik przy dacie */
+.timeline-square {
+    position: absolute;
+    left: -1px;
+    top: 3px;
+    width: 11px;
+    height: 11px;
+    background-color: #b07044;
+    border: 1px solid #7d4924;
+}
+
+/* TREŚĆ PUNKTU */
+.timeline-date {
+    color: #b07044;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.timeline-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1c1816;
+    margin: 0 0 12px 0;
+}
+
+.timeline-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #595048;
+    max-width: 560px;
+    margin: 0;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 900px) {
+    .history-section {
+        padding: 60px 20px;
+    }
+}
+
+/* SEKCJA SPACER 360° */
+.tour-section {
+    background-color: #f4efe6; /* Jasny beż spójny z sekcją Historia */
+    padding: 90px 80px 120px 80px;
+    scroll-margin-top: 60px;
+}
+
+.tour-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* BRĄZOWO-ZŁOTY BANER */
+.tour-banner {
+    background: linear-gradient(135deg, #a46132 0%, #b8783e 40%, #a26537 100%);
+    padding: 60px 70px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tour-info {
+    max-width: 540px;
+}
+
+.tour-tag {
+    color: #2b2523;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+.tour-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #1c1816;
+    margin: 0 0 20px 0;
+}
+
+.tour-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #2c2522;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* PRZYCISK */
+.tour-button {
+    display: inline-block;
+    background-color: #1c1816;
+    color: #e6dfd5;
+    padding: 18px 32px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.tour-button:hover {
+    background-color: #332b27;
+    transform: translateY(-2px);
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 900px) {
+    .tour-section {
+        padding: 50px 20px 80px 20px;
+    }
+
+    .tour-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 30px;
+    }
+
+    .tour-button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
     }
 }
