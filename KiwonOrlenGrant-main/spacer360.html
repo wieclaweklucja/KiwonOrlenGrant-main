@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Muzeum Libusza - spacer 360</title>
+    <title>Spacer 360° - Muzeum Libusza</title>
 
-    <link rel="stylesheet" href="spacer360.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .spacer-frame {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+    </style>
 </head>
-<body>
-<h1>Spacer 360</h1>
 
-        <nav>
-            <a href="geologia.html">Geologia</a>
-            <a href="muzeum.html">Muzeum</a>
-            <a href="spacer360.html">Spacer 360</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="aktualnosci.html">Aktualności</a>
+<body>
+
+    <iframe
+        class="spacer-frame"
+        src="img/spacer_360/app-files/index.html"
+        allowfullscreen>
+    </iframe>
 
 </body>
 </html>
