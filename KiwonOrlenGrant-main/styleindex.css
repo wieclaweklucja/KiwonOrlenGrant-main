@@ -10,7 +10,8 @@ body {
     line-height: 1.6;
 }
 
-/* nagłówek */
+
+/* NAGŁÓWEK */
 
 header {
     background-color: #2b2523;
@@ -22,10 +23,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 15px 80px;
-    position: fixed;        /* Przypina element na stałe do okna przeglądarki */
-    top: 0;                 /* Przykleja do samej góry */
-    left: 0;                /* Rozciąga od lewej krawędzi */
-    width: 100%;            /* Zapewnia pełną szerokość */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
     z-index: 1000;
 }
 
@@ -48,7 +52,8 @@ h1 a {
     color: #c7762b;
 }
 
-/* menu */
+
+/* MENU */
 
 nav {
     display: flex;
@@ -59,13 +64,21 @@ nav {
 
 nav a {
     color: rgb(189, 189, 189);
+
     font-family: 'Times New Roman', serif;
+
     font-size: 13px;
+
     letter-spacing: 1px;
+
     padding: 2px 0;
+
     text-decoration: none;
+
     border-bottom: 1px solid transparent;
+
     display: inline-block;
+
     transition: all 0.2s ease;
 }
 
@@ -74,25 +87,43 @@ nav a:hover {
     border-bottom: 1px solid #c7762b;
 }
 
-/* sekcja glowna */
+
+/* SEKCJA GŁÓWNA */
 
 .hero-section {
-    background: radial-gradient(circle at 20% 20%, #3a2a1d, #1c1816 75%);
-    height: 100vh;           /* Dyskretnie wymusza dokładnie pełną wysokość okna */
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #3a2a1d,
+            #1c1816 75%
+        );
+
+    height: 100vh;
+
     width: 100%;
+
     display: flex;
+
     align-items: center;
-    padding: 80px 80px 0 80px; /* Uwzględnia górny odstęp dla paska nawigacji */
-    box-sizing: border-box; /* Zapewnia, że padding nie powiększa sekcji poza 100vh */
+
+    padding: 80px 80px 0 80px;
+
+    box-sizing: border-box;
 }
 
 .hero-container {
     max-width: 1200px;
+
     width: 100%;
+
     margin: 0 auto;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: flex-end;
+
     gap: 40px;
 }
 
@@ -102,19 +133,29 @@ nav a:hover {
 
 .sub-tag {
     color: #b07044;
+
     font-size: 12px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     display: block;
+
     margin-bottom: 20px;
 }
 
 .hero-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 50px;
+
     line-height: 1.15;
+
     font-weight: 600;
+
     color: #f3ece4;
+
     margin: 0 0 25px 0;
 }
 
@@ -124,32 +165,46 @@ nav a:hover {
 
 .hero-description {
     font-size: 15px;
+
     line-height: 1.6;
+
     color: #bfae9e;
+
     margin-bottom: 35px;
+
     max-width: 540px;
 }
 
-/* przyciski */
+
+/* PRZYCISKI */
 
 .hero-buttons {
     display: flex;
+
     gap: 15px;
+
     margin-bottom: 35px;
 }
 
 .btn {
     padding: 14px 28px;
+
     font-size: 12px;
+
     font-weight: bold;
+
     letter-spacing: 1px;
+
     text-decoration: none;
+
     display: inline-block;
+
     transition: all 0.2s ease;
 }
 
 .btn-primary {
     background-color: #c7762b;
+
     color: #1c1816;
 }
 
@@ -159,55 +214,77 @@ nav a:hover {
 
 .btn-secondary {
     border: 1px solid #706255;
+
     color: #e6dfd5;
 }
 
 .btn-secondary:hover {
     border-color: #c7762b;
+
     color: #c7762b;
 }
 
-/* status z kropką */
+
+/* STATUS */
 
 .hero-status {
     font-size: 14px;
+
     color: #a09285;
+
     display: flex;
+
     align-items: center;
+
     gap: 10px;
 }
 
 .dot {
     width: 8px;
+
     height: 8px;
+
     background-color: #7ab356;
+
     border-radius: 50%;
+
     display: inline-block;
 }
 
 .godziny {
     color: white;
+
     font-family: 'Times New Roman', serif;
 }
 
 .godziny a {
     text-decoration: none;
+
     color: inherit;
+
     transition: all 0.2s ease;
 }
+
 .godziny a:hover {
     color: #c7762b;
 }
 
-/* prawe współrzędne */
+
+/* WSPÓŁRZĘDNE */
 
 .hero-meta {
     border-left: 1px solid #3d352e;
+
     padding-left: 25px;
+
     text-align: right;
+
     font-family: monospace;
+
     font-size: 13px;
+
     color: #8c7e72;
+
     line-height: 1.8;
 }
 
@@ -215,20 +292,30 @@ nav a:hover {
     margin: 0;
 }
 
+
 /* STOPKA */
+
 footer {
     background-color: #171412;
+
     color: #a09488;
+
     padding: 60px 80px 30px 80px;
+
     font-size: 14px;
 }
 
 .footer-container {
     max-width: 1200px;
+
     margin: 0 auto;
+
     display: flex;
+
     justify-content: space-between;
+
     gap: 40px;
+
     padding-bottom: 40px;
 }
 
@@ -238,27 +325,37 @@ footer {
 
 .footer-tag {
     color: #c7762b;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     display: block;
+
     margin-bottom: 8px;
 }
 
 .footer-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 20px;
+
     color: #f3ece4;
+
     margin: 0 0 15px 0;
 }
 
 .footer-col p {
     margin: 4px 0;
+
     line-height: 1.5;
 }
 
 .footer-link {
     color: inherit;
+
     text-decoration: none;
 }
 
@@ -272,44 +369,65 @@ footer {
 
 .project-text {
     font-size: 13px;
+
     line-height: 1.6;
 }
 
-/* DOLNA PASEK STOPKI */
 .footer-bottom {
     max-width: 1200px;
+
     margin: 0 auto;
+
     padding-top: 25px;
+
     border-top: 1px solid #2d2622;
+
     display: flex;
+
     justify-content: space-between;
+
     font-family: monospace;
+
     font-size: 12px;
+
     color: #615449;
 }
 
-/* RWD - wersja mobilna */
+
+/* STOPKA MOBILE */
+
 @media (max-width: 800px) {
+
     footer {
         padding: 40px 20px 20px 20px;
     }
+
     .footer-container {
         flex-direction: column;
+
         gap: 30px;
     }
+
     .footer-bottom {
         flex-direction: column;
+
         gap: 10px;
+
         text-align: center;
     }
+
 }
 
-/* widok mobilny */
+
+/* WIDOK MOBILNY */
 
 @media (max-width: 900px) {
+
     .navbar {
         flex-direction: column;
+
         gap: 15px;
+
         padding: 20px;
     }
 
@@ -319,6 +437,7 @@ footer {
 
     .hero-container {
         flex-direction: column;
+
         align-items: flex-start;
     }
 
@@ -328,113 +447,167 @@ footer {
 
     .hero-meta {
         border-left: none;
+
         border-top: 1px solid #3d352e;
+
         padding-left: 0;
+
         padding-top: 20px;
+
         text-align: left;
+
         width: 100%;
     }
+
 }
 
-/* SEKCJA AKTUALNOŚCI */
+
+/* AKTUALNOŚCI */
+
 .news-section {
-    background-color: #f4efe6; /* Jasno-beżowe tło ze zdjęcia */
+    background-color: #f4efe6;
+
     color: #2b2523;
+
     padding: 80px 80px 0 80px;
-    scroll-margin-top: 60px; /* Zapewnia poprawny odstęp po kliknięciu w nawigacji */
+
+    scroll-margin-top: 60px;
+
     height: 100vh;
+
     box-sizing: border-box;
 }
 
 .news-container {
     max-width: 1200px;
+
     margin: 0 auto;
 }
 
 .news-tag {
     color: #b07044;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     display: block;
+
     margin-bottom: 10px;
+
     text-transform: uppercase;
 }
 
 .news-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 42px;
+
     font-weight: 600;
+
     color: #1c1816;
+
     margin: 0 0 50px 0;
 }
 
-/* SIATKA KAFELKÓW (3 w rzędzie) */
 .news-grid {
     display: flex;
+
     gap: 30px;
+
     justify-content: space-between;
 }
 
-/* POJEDYNCZA KARTA */
 .news-card {
     flex: 1;
-    background-color: #eae3d5; /* Lekko ciemniejszy beżowy odcień wnętrza kart */
-    border: 1px solid #ddd2c1;   /* Subtelna ramka wokół kafelków */
+
+    background-color: #eae3d5;
+
+    border: 1px solid #ddd2c1;
+
     padding: 35px 30px;
+
     display: flex;
+
     flex-direction: column;
 }
 
 .card-date {
     color: #b07044;
+
     font-size: 12px;
+
     letter-spacing: 1px;
+
     display: block;
+
     margin-bottom: 20px;
 }
 
 .card-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 22px;
+
     line-height: 1.3;
+
     color: #1c1816;
+
     margin: 0 0 20px 0;
 }
 
 .card-text {
     font-size: 14px;
+
     line-height: 1.6;
+
     color: #595048;
+
     margin: 0;
 }
 
-/* WERSJA MOBILNA */
 @media (max-width: 850px) {
+
     .news-section {
         padding: 50px 20px;
+
+        height: auto;
     }
 
     .news-grid {
         flex-direction: column;
+
         gap: 20px;
     }
+
 }
 
-/* SEKCJA O MUZEUM */
+
+/* O MUZEUM */
+
 .about-section {
-    background-color: #1c1816; /* Ciemne tło, spójne z Hero */
+    background-color: #1c1816;
+
     color: #e6dfd5;
+
     padding: 100px 80px;
+
     scroll-margin-top: 60px;
 }
 
 .about-container {
     max-width: 1200px;
+
     margin: 0 auto;
+
     display: flex;
+
     justify-content: space-between;
+
     gap: 80px;
+
     align-items: flex-start;
 }
 
@@ -442,90 +615,121 @@ footer {
     flex: 1;
 }
 
-/* Etykiety nad tytułami */
 .about-tag {
     color: #b07044;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     display: block;
+
     margin-bottom: 12px;
+
     text-transform: uppercase;
 }
 
 .about-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 42px;
+
     font-weight: 600;
+
     color: #f3ece4;
+
     margin: 0 0 30px 0;
 }
 
 .about-lead {
     font-size: 15px;
+
     line-height: 1.6;
+
     color: #bfae9e;
+
     margin-bottom: 50px;
 }
 
-/* Tabela z cechami i liniami */
 .about-features {
     display: flex;
+
     flex-direction: column;
 }
 
 .feature-row {
     display: flex;
+
     padding: 24px 0;
-    border-top: 1px solid #332b27; /* Linia nad każdym wierszem */
+
+    border-top: 1px solid #332b27;
 }
 
 .feature-label {
     width: 130px;
+
     flex-shrink: 0;
+
     font-size: 11px;
+
     font-weight: bold;
+
     letter-spacing: 1.5px;
+
     color: #b07044;
+
     text-transform: uppercase;
+
     padding-top: 3px;
 }
 
 .feature-desc {
     margin: 0;
+
     font-size: 14px;
+
     line-height: 1.6;
+
     color: #e6dfd5;
 }
 
-/* Prawa kolumna - Dział Etnograficzny */
 .etno-about {
-    margin-top: 160px; /* Obniżenie prawej kolumny tak jak na zrzucie ekranu */
+    margin-top: 160px;
 }
 
 .etno-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 26px;
+
     font-weight: 600;
+
     color: #f3ece4;
+
     margin: 0 0 20px 0;
 }
 
 .etno-desc {
     font-size: 14px;
+
     line-height: 1.6;
+
     color: #bfae9e;
+
     margin: 0;
 }
 
-/* RESPONSYWNOŚĆ (Ekrany mobilne) */
 @media (max-width: 900px) {
+
     .about-section {
         padding: 60px 20px;
     }
 
     .about-container {
         flex-direction: column;
+
         gap: 40px;
     }
 
@@ -535,202 +739,400 @@ footer {
 
     .feature-row {
         flex-direction: column;
+
         gap: 8px;
     }
 
     .feature-label {
         width: 100%;
     }
+
 }
 
-/* SEKCJA EKSPONATY */
+
+/* EKSPONATY */
+
 .exhibits-section {
-    background-color: #f4efe6; /* Jasny beż, spójny z Aktualnościami */
+    background-color: #f4efe6;
+
     color: #1c1816;
+
     padding: 100px 80px;
+
     scroll-margin-top: 60px;
 }
 
 .exhibits-container {
     max-width: 1200px;
+
     margin: 0 auto;
 }
 
 .exhibits-tag {
     color: #b07044;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     display: block;
+
     margin-bottom: 12px;
+
     text-transform: uppercase;
 }
 
 .exhibits-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 42px;
+
     font-weight: 600;
+
     color: #1c1816;
+
     margin: 0 0 15px 0;
 }
 
 .exhibits-subtitle {
     font-size: 15px;
+
     line-height: 1.6;
+
     color: #595048;
+
     max-width: 580px;
+
     margin: 0 0 50px 0;
 }
 
-/* SIATKA KART (CSS Grid: 3 kolumny) */
 .exhibits-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 30px;
 }
 
-/* POJEDYNCZA KARTA */
 .exhibit-card {
-    background-color: #2b2523; /* Ciemny brąz wewnątrz karty */
+    background-color: #2b2523;
+
     color: #e6dfd5;
+
     padding: 35px 30px 25px 30px;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: space-between;
+
     min-height: 360px;
 }
 
 .exhibit-name {
     font-family: 'Playfair Display', serif;
+
     font-size: 24px;
-    color: #c7762b; /* Pomarańczowy nagłówek karty */
+
+    color: #c7762b;
+
     margin: 0 0 8px 0;
 }
 
 .exhibit-sub {
     font-size: 12px;
+
     color: #a09285;
+
     display: block;
+
     margin-bottom: 20px;
 }
 
 .exhibit-text {
     font-size: 14px;
+
     line-height: 1.6;
+
     color: #bfae9e;
+
     margin: 0 0 30px 0;
 }
 
-/* STOPKA KARTY Z NAPISEM */
 .card-footer-action {
     font-size: 10px;
+
     letter-spacing: 1.5px;
+
     color: #706255;
+
     text-transform: uppercase;
+
     border-top: 1px solid #3d352e;
+
     padding-top: 15px;
 }
 
-/* WERSJA MOBILNA */
 @media (max-width: 900px) {
+
     .exhibits-section {
         padding: 60px 20px;
     }
-    
+
     .exhibits-grid {
         grid-template-columns: 1fr;
+
         gap: 20px;
     }
+
 }
 
-/* SEKCJA GEOLOGIA */
+
+/* GEOLOGIA */
+
 .geology-section {
-    background-color: #1c1816; /* Ciemne tło spójne z resztą ciemnych sekcji */
+    background-color: #1c1816;
+
     color: #e6dfd5;
+
     padding: 100px 80px;
+
     scroll-margin-top: 60px;
 }
 
 .geology-container {
     max-width: 1200px;
+
     margin: 0 auto;
 }
 
 .geology-tag {
     color: #b07044;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     display: block;
+
     margin-bottom: 12px;
+
     text-transform: uppercase;
 }
 
 .geology-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 42px;
+
     font-weight: 600;
+
     color: #f3ece4;
+
     margin: 0 0 25px 0;
 }
 
 .geology-text {
     font-size: 15px;
+
     line-height: 1.6;
+
     color: #bfae9e;
+
     max-width: 620px;
+
     margin: 0 0 60px 0;
 }
 
-/* LISTA BLOKÓW Z MAPAMI */
 .geology-maps-list {
     display: flex;
+
     flex-direction: column;
+
     gap: 25px;
 }
 
-/* POJEDYNCZY KAFELEK Z MAPĄ */
 .map-item {
     position: relative;
-    background-color: #eae3d5; /* Jasny beż z makiety */
+
+    background-color: #eae3d5;
+
     border-radius: 2px;
+
     padding: 20px;
+
     box-sizing: border-box;
 }
 
-/* BRĄZOWE KÓŁKO Z NUMERKIEM */
+
+/* KÓŁECZKO Z NUMEREM */
+
 .map-badge {
     position: absolute;
+
     top: 25px;
+
     left: 25px;
+
     width: 36px;
+
     height: 36px;
+
     background-color: #b07044;
+
     color: #ffffff;
+
     border-radius: 50%;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     font-weight: bold;
+
     font-size: 15px;
+
     z-index: 10;
+
+    cursor: help;
+
+    outline: none;
 }
 
-/* KONTENER ORAZ EMBED NA PDF */
+
+/* TOOLTIP */
+
+.map-badge::after {
+    content: attr(data-tooltip);
+
+    position: absolute;
+
+    left: calc(100% + 14px);
+
+    top: 50%;
+
+    transform:
+        translateY(-50%)
+        translateX(-5px);
+
+    width: max-content;
+
+    max-width: 280px;
+
+    padding: 9px 13px;
+
+    background-color: #2b2523;
+
+    color: #e6dfd5;
+
+    border: 1px solid #706255;
+
+    border-radius: 3px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: normal;
+
+    line-height: 1.4;
+
+    text-align: left;
+
+    white-space: normal;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+
+    z-index: 100;
+}
+
+
+/* STRZAŁKA TOOLTIPA */
+
+.map-badge::before {
+    content: "";
+
+    position: absolute;
+
+    left: calc(100% + 4px);
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: 6px solid transparent;
+
+    border-right-color: #2b2523;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: opacity 0.2s ease;
+
+    z-index: 100;
+}
+
+
+/* WYŚWIETLENIE TOOLTIPA */
+
+.map-badge:hover::after,
+.map-badge:focus::after {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(-50%)
+        translateX(0);
+}
+
+.map-badge:hover::before,
+.map-badge:focus::before {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* MAPA */
+
 .map-content {
     width: 100%;
-    height: 550px; /* Wysokość okna z podglądem mapy */
+
+    height: 550px;
+
     overflow: hidden;
 }
 
 .pdf-viewer {
     width: 100%;
+
     height: 100%;
+
     border: none;
 }
 
-/* RESPONSYWNOŚĆ */
+
+/* GEOLOGIA MOBILE */
+
 @media (max-width: 900px) {
+
     .geology-section {
         padding: 60px 20px;
     }
@@ -741,73 +1143,110 @@ footer {
 
     .map-badge {
         top: 15px;
+
         left: 15px;
+
         width: 30px;
+
         height: 30px;
+
         font-size: 13px;
     }
+
+    .map-badge::after {
+        max-width: 220px;
+
+        font-size: 11px;
+    }
+
 }
 
-/* SEKCJA HISTORIA */
+
+/* HISTORIA */
+
 .history-section {
-    background-color: #f4efe6; /* Jasny beż */
+    background-color: #f4efe6;
+
     color: #1c1816;
+
     padding: 100px 80px;
+
     scroll-margin-top: 60px;
 }
 
 .history-container {
     max-width: 1200px;
+
     margin: 0 auto;
 }
 
 .history-tag {
     color: #b07044;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     display: block;
+
     margin-bottom: 12px;
+
     text-transform: uppercase;
 }
 
 .history-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 42px;
+
     font-weight: 600;
+
     color: #1c1816;
+
     margin: 0 0 20px 0;
 }
 
 .history-subtitle {
     font-size: 15px;
+
     line-height: 1.6;
+
     color: #595048;
+
     max-width: 580px;
+
     margin: 0 0 70px 0;
 }
 
-/* KONTENER LINII CZASU */
 .timeline {
     position: relative;
+
     padding-left: 20px;
 }
 
-/* Pionowa szara linia boczna */
 .timeline::before {
     content: '';
+
     position: absolute;
+
     top: 5px;
+
     bottom: 0;
+
     left: 4px;
+
     width: 1px;
+
     background-color: #d8cebe;
 }
 
-/* POJEDYNCZY PUNKT NA LINII CZASU */
 .timeline-item {
     position: relative;
+
     padding-left: 35px;
+
     margin-bottom: 55px;
 }
 
@@ -815,72 +1254,109 @@ footer {
     margin-bottom: 0;
 }
 
-/* Kwadracik przy dacie */
 .timeline-square {
     position: absolute;
+
     left: -1px;
+
     top: 3px;
+
     width: 11px;
+
     height: 11px;
+
     background-color: #b07044;
+
     border: 1px solid #7d4924;
 }
 
-/* TREŚĆ PUNKTU */
 .timeline-date {
     color: #b07044;
+
     font-size: 12px;
+
     font-weight: bold;
+
     letter-spacing: 1px;
+
     display: block;
+
     margin-bottom: 10px;
 }
 
 .timeline-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 20px;
+
     font-weight: 600;
+
     color: #1c1816;
+
     margin: 0 0 12px 0;
 }
 
 .timeline-text {
     font-size: 14px;
+
     line-height: 1.6;
+
     color: #595048;
+
     max-width: 560px;
+
     margin: 0;
 }
 
-/* RESPONSYWNOŚĆ */
 @media (max-width: 900px) {
+
     .history-section {
         padding: 60px 20px;
     }
+
 }
 
-/* SEKCJA SPACER 360° */
+
+/* SPACER 360 */
+
 .tour-section {
-    background-color: #f4efe6; /* Jasny beż spójny z sekcją Historia */
+    background-color: #f4efe6;
+
     padding: 90px 80px 120px 80px;
+
     scroll-margin-top: 60px;
 }
 
 .tour-container {
     max-width: 1200px;
+
     margin: 0 auto;
 }
 
-/* BRĄZOWO-ZŁOTY BANER */
 .tour-banner {
-    background: linear-gradient(135deg, #a46132 0%, #b8783e 40%, #a26537 100%);
+    background:
+        linear-gradient(
+            135deg,
+            #a46132 0%,
+            #b8783e 40%,
+            #a26537 100%
+        );
+
     padding: 60px 70px;
+
     border-radius: 2px;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     gap: 40px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    box-shadow:
+        0 4px 20px
+        rgba(0, 0, 0, 0.08);
 }
 
 .tour-info {
@@ -889,66 +1365,96 @@ footer {
 
 .tour-tag {
     color: #2b2523;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     display: block;
+
     margin-bottom: 12px;
+
     text-transform: uppercase;
+
     opacity: 0.75;
 }
 
 .tour-title {
     font-family: 'Playfair Display', serif;
+
     font-size: 42px;
+
     font-weight: 600;
+
     color: #1c1816;
+
     margin: 0 0 20px 0;
 }
 
 .tour-text {
     font-size: 15px;
+
     line-height: 1.6;
+
     color: #2c2522;
+
     margin: 0;
+
     opacity: 0.9;
 }
 
-/* PRZYCISK */
 .tour-button {
     display: inline-block;
+
     background-color: #1c1816;
+
     color: #e6dfd5;
+
     padding: 18px 32px;
+
     font-size: 11px;
+
     letter-spacing: 2px;
+
     font-weight: bold;
+
     text-decoration: none;
+
     text-transform: uppercase;
+
     transition: all 0.2s ease;
+
     white-space: nowrap;
 }
 
 .tour-button:hover {
     background-color: #332b27;
+
     transform: translateY(-2px);
 }
 
-/* RESPONSYWNOŚĆ */
 @media (max-width: 900px) {
+
     .tour-section {
         padding: 50px 20px 80px 20px;
     }
 
     .tour-banner {
         flex-direction: column;
+
         align-items: flex-start;
+
         padding: 40px 30px;
     }
 
     .tour-button {
         width: 100%;
+
         text-align: center;
+
         box-sizing: border-box;
     }
+
 }
